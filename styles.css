@@ -321,22 +321,37 @@ section > dl {
     list-style-position: outside;   
     margin-inline-start: 2rem;     
 }
-ol li{
+  ol li{
     padding:1em;
 }
 
-aside{
+   aside{
     background-color: var(--mint);
 }
-aside h2{
+   aside h2{
     padding: .5em;
 }
-aside h3 a{
+   aside h3 a{
     text-decoration: none;
 }
-aside h3 a:link,
-aside h3 a:visited {
+   aside h3 a:link,
+   aside h3 a:visited {
   text-decoration: none;
   color: inherit; 
+  }
+  .star {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px; 
+  }
+  
+  .star--on {
+    fill: var(--orange) !important;
+    stroke: var(--white) !important;
+  }
+  
+  .star--off {
+    fill:  var(--white);
+    stroke: var(--white);
   }
 }
