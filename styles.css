@@ -65,12 +65,16 @@ table {
 
 body {
     min-width: 428px;
-    background-color: var(--mint-transparent);
 }
-
+main{
+    background-color: var(--white);
+}
 h1 {
     font-family: var(--font-heading);
     font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
 }
 
 h2 {
@@ -89,6 +93,7 @@ header {
     align-items: center;
     background-color: var(--orange);
     padding: 10px 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 nav a {
     font-family: var(--font-heading);
@@ -123,6 +128,41 @@ nav {
     max-width: 1280px;
     margin: 0 auto;
 }
+#sign-in-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: white;
+    z-index: 1000;
+    align-items: center;
+    list-style: none;
+}
+.sign-in-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-wrapper label {
+    display: flex; /* Forces the label onto a new line */
+    margin-top: 5px; /* Adds spacing between the icon and text */
+    align-self: center;
+    margin: 0 auto;   
+}
+.sign-in-wrapper svg {
+    margin-bottom: 5px; /* Adds a little spacing */
+}
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white;
+    z-index: 1000;
+    align-items: center;
+    padding:10px 20px 10px;
+}
 nav ul {
     grid-area: hamburger;
     padding: 0;
@@ -136,7 +176,7 @@ nav li img {
 }
 nav li a {
     display: block;
-    padding: 20px;
+    padding: 8px;
     text-decoration: none;
 }
 nav label {
@@ -145,7 +185,6 @@ nav label {
     user-select: none;
     position: relative;
     bottom: 5px;
-    left: 30px;
 }
 nav span {
     display: block;
@@ -171,5 +210,52 @@ nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
+}
+/* Center the .search container, but remove the border from it */
+.search {
+    position: absolute;
+    top: 7em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Orange border on the input itself */
+.search input[type="search"] {
+    border: 2px solid var(--orange); /* Sharp orange border */
+    padding: 8px;
+    outline: none; /* Removes default focus outline, optional */
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+
+/* Style the button to give the SVG an orange background and some padding */
+.search button {
+    background: var(--orange);
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the search icon inside the button */
+.search button svg {
+    background: var(--white); /* Turn the icon white against orange background */
+    fill: var(--white);
+    width: 24px;
+    height: 25px;
+}
+article {
+    margin-top: .5em;
+    background-color: var(--white);
+}
+#options{
+    display: flex;
+    justify-content: space-evenly;
 }
 }
