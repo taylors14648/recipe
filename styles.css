@@ -354,4 +354,67 @@ section > dl {
     fill:  var(--white);
     stroke: var(--white);
   }
+  .side-dish {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;                        
+    margin-bottom: 1rem;             
+  }
+  .side-dish img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.side-dish p,
+.side-dish dl{
+    padding: 0;
+}
+
+aside h3{
+    padding-bottom: 1em;
+}
+
+aside .rating dd .rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: start;
+  }
+
+  footer section h2 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px;
+    padding: 0;
+    margin: -1px; 
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;   
+    gap: 1em;
+    padding: 1em;
+  }
+  footer ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1em;
+}
+
+  #facebook label,
+  #instagram label,
+  #youtube label,
+  #tiktok label {
+  color: var(--orange);
+  font-family: var(--font-heading);
+  margin: 0 auto; 
+  font-size: 20px;
+}
 }
