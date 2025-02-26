@@ -74,7 +74,7 @@ h1 {
     font-size: 40px;
     display: flex;
     justify-content: center;
-    padding: 2em;
+    padding-top: 2em;
 }
 
 h2 {
@@ -144,13 +144,13 @@ nav {
     align-items: center;
 }
 .sign-in-wrapper label {
-    display: flex; /* Forces the label onto a new line */
-    margin-top: 5px; /* Adds spacing between the icon and text */
+    display: flex; 
+    margin-top: 5px; 
     align-self: center;
     margin: 0 auto;   
 }
 .sign-in-wrapper svg {
-    margin-bottom: 5px; /* Adds a little spacing */
+    margin-bottom: 5px; 
 }
 #menu-container {
     display: flex;
@@ -211,7 +211,7 @@ nav h2 {
     height: 1px;
     width: 1px;
 }
-/* Center the .search container, but remove the border from it */
+
 .search {
     position: absolute;
     top: 7em;
@@ -223,16 +223,14 @@ nav h2 {
     z-index: 999;
 }
 
-/* Orange border on the input itself */
 .search input[type="search"] {
-    border: 2px solid var(--orange); /* Sharp orange border */
+    border: 2px solid var(--orange); 
     padding: 8px;
-    outline: none; /* Removes default focus outline, optional */
+    outline: none;
     font-family: var(--font-body);
     font-size: 16px;
 }
 
-/* Style the button to give the SVG an orange background and some padding */
 .search button {
     background: var(--orange);
     border: none;
@@ -243,9 +241,8 @@ nav h2 {
     justify-content: center;
 }
 
-/* Style the search icon inside the button */
 .search button svg {
-    background: var(--white); /* Turn the icon white against orange background */
+    background: var(--white); 
     fill: var(--white);
     width: 24px;
     height: 25px;
@@ -257,5 +254,28 @@ article {
 #options{
     display: flex;
     justify-content: space-evenly;
+    padding: 1em;
 }
+
+.save,
+.share,
+.print,
+.jump {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  color: var(--orange);
+}
+
+.save label,
+.share label,
+.print label,
+.jump label {
+  font-family: var(--font-heading);
+  color: var(--orange);
+  margin-top: 5px; 
+  font-size: 20px; 
+}
+
 }
