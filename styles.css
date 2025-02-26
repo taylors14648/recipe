@@ -307,7 +307,36 @@ section > dl {
   section > dl dd {
     margin: 0;
   }
-  .ingredients ul {
+  #ingredients ul {
     list-style-type: square;
+    margin: 1em;
+    list-style-position: outside;
+  }
+  #ingredients ul li{
+    margin: 1em;
+    list-style-position: outside; 
+  }
+  ol {
+    list-style: decimal;  
+    list-style-position: outside;   
+    margin-inline-start: 2rem;     
+}
+ol li{
+    padding:1em;
+}
+
+aside{
+    background-color: var(--mint);
+}
+aside h2{
+    padding: .5em;
+}
+aside h3 a{
+    text-decoration: none;
+}
+aside h3 a:link,
+aside h3 a:visited {
+  text-decoration: none;
+  color: inherit; 
   }
 }
