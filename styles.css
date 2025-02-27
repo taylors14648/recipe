@@ -683,4 +683,41 @@ aside dl dd {
     display: inline; 
     margin-left: 0.5rem; 
 }
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    max-width: 768px; 
+    margin: 0 auto; 
+}
+.connect {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    order:1;
+}
+
+.connect ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    padding: 0;
+    list-style: none;
+}
+
+
+.small-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: -1;
+}
+.small-img img{
+    padding-bottom:2em;
+}
+small{
+    transform: translate(-215px, -10px);
+    gap: 0;
+}
   }
