@@ -633,4 +633,54 @@ section > dl dd {
 #ingredients h2, #directions h2 {
     text-align: center;
 }
+
+aside {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+aside h2 {
+    text-align: center;
+    width: 100%; 
+}
+
+.side-dish-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+}
+
+.side-dish {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.side-dish img {
+    width: 100px;
+    height: auto;
+}
+
+.side-dish-content {
+    display: flex;
+    flex-direction: column;
+}
+aside dl{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+aside dl dt {
+    font-weight: bold; 
+    text-align: left; 
+    display: inline; 
+}
+aside dl dd {
+    display: inline; 
+    margin-left: 0.5rem; 
+}
   }
