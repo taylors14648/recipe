@@ -539,10 +539,13 @@ footer .small-container {
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 2.5em;
+            gap: 3.5em;
             max-height: none;
             overflow: visible;
             transform: translateY(90px);   
+        }
+        nav ul li:not(:first-child):not(:last-child) {
+            transform: translateX(50%);
         }
         nav li {
             display: flex;
@@ -592,7 +595,7 @@ footer .small-container {
             top: 0;
         }
         .sign-in-wrapper{
-            transform: translate(140%,-150%);
+            transform: translate(25%,-150%);
             padding:0;
         }
         .sign-in-wrapper label{
