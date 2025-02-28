@@ -819,9 +819,8 @@ small{
     }
 
     #logo {
-        transform: translate(5%,32%);
+        transform:scale(1.5) translate(5%,32%) ;
         height: 100%;
-        scale: 1.5;
         background-color: var(--orange);
         padding-right:75px;
         padding-top:25px;
