@@ -200,7 +200,13 @@ label{
 
 }
 nav{
-    list-style: none;
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
 }
 nav ul {
     grid-area: hamburger;
@@ -438,7 +444,10 @@ aside .rating dd .rating {
     align-items: center;
     justify-content: start;
   }
-
+  .side-dish:hover {
+    background-color: rgb(255, 187, 0);
+    transition: background-color 0.2s ease-in-out;
+}
   footer section h2 {
     position: absolute; 
     width: 1px; 
@@ -742,6 +751,7 @@ aside h2 {
 
 .side-dish-content {
     display: flex;
+    padding: 10px;
     flex-direction: column;
 }
 aside dl{
@@ -814,11 +824,14 @@ small{
     }
 
     #logo {
-        transform: none !important;
-        top: 0;
-        left: 0;
-        height: 110%;
+        transform: translate(5%,32%);
+        height: 100%;
         scale: 1.5;
+        background-color: var(--orange);
+        padding-right:75px;
+        padding-top:25px;
+        padding-bottom:15px;
+        padding-left:15px;
     }
 
     nav ul{
