@@ -105,13 +105,18 @@ h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
 }
-
+footer,
+#social li,
+menu li{
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+}
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--orange);
-    padding: 10px 0;
+    padding: 15px 0;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 nav a {
@@ -127,10 +132,6 @@ nav ul li a:hover {
     background-color: var(--orange);
     color: var(--white);
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-.menu li, #social li, footer {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
 }
 
 p, dd, li, nav, input {
@@ -151,20 +152,35 @@ nav {
     max-width: 1280px;
     margin: 0 auto;
 }
-.sign-in-container {
+nav ul li:first-child {
+    display: none;
+}
+#logo {
+    display: block !important;
+}
+#menu-container {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    background: white;
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
     align-items: center;
-    list-style: none;
+}
+label{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
 }
 .sign-in-wrapper {
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: white;
+    transform: translateX(447%);
+    padding:3px;
 }
 .sign-in-wrapper label {
     display: flex; 
@@ -173,18 +189,15 @@ nav {
     margin: 0 auto;   
 }
 .sign-in-wrapper svg {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+     
 }
-#menu-container {
-    display: flex;
-    flex-direction: column;
+.sign-in-container {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background: white;
-    z-index: 1000;
-    align-items: center;
-    padding:10px 20px 10px;
+    top:0;
+    right:0;
+    height: 100%; 
+
 }
 nav{
     list-style: none;
@@ -503,16 +516,15 @@ footer .small-container {
 
     }
 
-    #logo{
+    nav ul li:first-child{
         position: absolute;
-        display: flex;
         background-color: var(--orange);
-        align-items: center;
-        justify-content: flex-start;
         left: 0; 
         top: 0;
-        padding:15px; 
-        transform: translateY(-105px) translateX(-20px);
+        padding:15px;
+        padding-right:25px; 
+        transform: translateY(-115%);
+        display: block !important;
     }
         
         nav {
@@ -539,14 +551,8 @@ footer .small-container {
             text-align: center;
             max-width: 50px; 
         }
-        nav ul li:first-child {
-            flex: none;
-            width: 0;
-            overflow: hidden;
-        }
-        nav li:not(:first-child) {
-            margin-right: 0.8em;
-        }
+        
+
         nav li img {
             display: block;
             width: 80px; 
@@ -567,6 +573,8 @@ footer .small-container {
         nav label {
             display: none;
         }
+        
+        
         .sign-in-container{
             transform: translateY(10PX);
         }
@@ -582,7 +590,14 @@ footer .small-container {
             position: absolute;
             left: 0;
             top: 0;
-            
+        }
+        .sign-in-wrapper{
+            transform: translate(140%,-150%);
+            padding:0;
+        }
+        .sign-in-wrapper label{
+            text-align: center;
+            transform: translateX(25%);
         }
         .search {
             position: absolute;
@@ -787,7 +802,7 @@ small{
         width: 100%;
         max-width: 1280px;
     }
-    #menu-container {
+    nav ul li:not(:last-child) {
         position: absolute;
         top: 0;
         left: 50%;
