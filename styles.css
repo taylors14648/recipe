@@ -1,3 +1,4 @@
+/*-------------------- Imported fonts --------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 /*-------------------- CSS RESET --------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -1040,4 +1041,35 @@ footer ul{
 footer .small-container {
     transform: translate(-175%,-350%);
   }
+}
+/*---------------Print media attempt----------------*/
+  @media print {
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        overflow: hidden;
+    }
+
+    img,
+    label,
+    form,
+    svg {
+        filter: grayscale(100%);
+    }
+
+    nav {
+        display: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ") ";
+        font-size: 12px;
+    }
+
+    * {
+        page-break-inside: avoid;
+    }
 }
